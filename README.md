@@ -8,15 +8,15 @@
 ## Project directory structure
    
     | --- big_model large model
-    | ---Model object
-    | ---Utils Toolkit
+    | --- Model object
+    | --- Utils Toolkit
     | --- .env environment variables configuration file
     | --- .env.example configuration file for environment variables
     | --- .dockerignore files ignored during docker build
-    | ---DockerFile DockerFile build file
-    | ---README Project Description
+    | --- DockerFile DockerFile build file
+    | --- README Project Description
     | --- README_CN project Chinese description
-    | ---requirements.txt Dependencies required for project operation
+    | --- requirements.txt Dependencies required for project operation
 
 
 ## 1. How the source code runs
