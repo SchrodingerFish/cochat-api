@@ -57,4 +57,3 @@ if __name__ == '__main__':
     }
     response = get_response(req)
     print(response.message)
-
