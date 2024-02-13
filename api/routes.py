@@ -11,6 +11,7 @@ from big_model.qianwen import get_response as qianwen
 from big_model.minimax import get_response as minimax
 from big_model.deepseek import get_response as deepseek
 from big_model.spark import get_response as spark
+from big_model.gemini import get_response as gemini
 
 from model.User import User
 
@@ -48,10 +49,7 @@ def login():
 @jwt_required()
 def chat():
     req = request.json
-    if req['model'].lower() == 'gpt-3.5-turbo':
-        response = big_model.chatanywhere.get_response(req)
-        return jsonify(response)
-    if req['model'].lower() == 'gpt-4':
+    if req['model'].lower() in ['gpt-3.5-turbo', 'gpt-4']:
         response = big_model.chatanywhere.get_response(req)
         return jsonify(response)
     if req['model'].lower() == '360gpt-pro':
@@ -72,6 +70,9 @@ def chat():
         return jsonify(response)
     if req['model'].lower() in ['qwen-max', 'qwen-max-1201', 'qwen-max-longcontext']:
         response = big_model.qianwen.get_response(req)
+        return jsonify(response)
+    if req['model'].lower() in ['gemini-pro']:
+        response = big_model.gemini.get_response(req)
         return jsonify(response)
     else:
         return jsonify({"error": "模型不支持"}), 400
