@@ -74,6 +74,9 @@ def chat():
     if req['model'].lower() in ['gemini-pro']:
         response = big_model.gemini.get_response(req)
         return jsonify(response)
+    if req['model'] in ['Baichuan2-Turbo', 'Baichuan2-Turbo-192k']:
+        response = big_model.baichuan.get_response(req)
+        return jsonify(response)
     else:
         return jsonify({"error": "模型不支持"}), 400
 
