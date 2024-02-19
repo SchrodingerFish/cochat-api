@@ -40,52 +40,32 @@
 > 2. Run the container
 > 'Docker run -d -p 8000:8000 cochat-api'
 > 3. Configurable environment variables are as follows
-"text
+```text
 #iFLYTEK Spark configuration
-
-
 -E SPARK_APPID = XXXX
 -E SPARK_API_KEY = XXXX
 -E SPARK_API_SECRET = XXXX
 #Tongyi Qianwen configuration
-
-
 -E DASHSCOPE_API_KEY = XXXX
 #Wall Luca (front-end acquisition)
-
-
 -E LUCA_ACCESS_TOKEN = XXXX
 -E LUCA_CONVERSATION_ID = XXXX
 #DeepSeek
-
-
 -E DEEP_SEEK_API_KEY = XXXX
 #MINIMAX
-
-
 -E MINIMAX_API_KEY = XXXX
 -E MINIMAX_GROUP_ID = XXXX
 #LinkAI
-
-
 -E LINK_AI_API_KEY = XXXX
 #360 Brain
-
-
 -E ZHINAO_API_KEY = XXXX
 #chatanywhere
-
-
 -E CHATANYWHERE_API_KEY = XXXX
 #gemini
-
-
 -E GEMINI_API_KEY=XXXX
 #baichuan
-
-
 -E BAICHUAN_API_KEY=XXXX
-"..."
+```
 
 
 ## 3. How Docker runs (using existing images on dockerhub)
