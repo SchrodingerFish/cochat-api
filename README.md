@@ -62,7 +62,7 @@
 #chatanywhere
 -E CHATANYWHERE_API_KEY = XXXX
 #gemini
--E 
+-E GEMINI_API_KEY=XXXX
 #baichuan
 -E BAICHUAN_API_KEY=XXXX
 "..."
