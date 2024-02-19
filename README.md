@@ -61,6 +61,10 @@
 -E ZHINAO_API_KEY = XXXX
 #chatanywhere
 -E CHATANYWHERE_API_KEY = XXXX
+#gemini
+-E 
+#baichuan
+-E BAICHUAN_API_KEY=XXXX
 "..."
 
 
