@@ -98,8 +98,6 @@ Header added: Authorization Bearer ${your JWT_TOKEN}
 
 
 ## contact information
-> QQ: 506421453
-
 
 > Email: schrodingersfish@outlook.com
 
